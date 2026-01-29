@@ -90,13 +90,13 @@ def get_high_risk_contacts() -> list:
         
         #filter for >= 15 mins and sort by the high_risk_list =[]
         # and return sorted(high_risk_list, key=lambda x: x[2], reverse=True)
-        high_risk_list = [
+    high_risk_list = [
             (exposed, infected, time)
             for (exposed, infected), time in exposure_map.items()
             if time >= 15
-        ]
-        high_risk_list.sort(key=lambda x: x[2], reverse=True)
-        return high_risk_list
+]
+    high_risk_list.sort(key=lambda x: x[2], reverse=True)
+    return high_risk_list
     
 
 def print_report():
