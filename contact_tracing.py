@@ -105,7 +105,7 @@ def print_report():
     infected_count = sum(1 for status in infection_status.values() if status)
     print("Exposure Report")
     print("----------------")
-    print(f"Total People: {len(contact_events)}")
+    print(f"Total People: {len(infection_status)}")
     print(f"Total Contact Events: {len(contact_events)}")
     print(f"Infected People: {infected_count}")
     print(f"High Risk Individuals: {len(high_risk)}")
