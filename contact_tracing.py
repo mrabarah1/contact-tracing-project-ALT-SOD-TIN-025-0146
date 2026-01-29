@@ -34,7 +34,7 @@ contact_events = [
 
 def add_person(name: str, infected: bool):
     """Clean the name and updates the global infection_status""" 
-    clean_name = name.strip()
+    clean_name = name.strip().title()
     #Add the person if they do not exist
     is_new = clean_name not in infection_status
     
